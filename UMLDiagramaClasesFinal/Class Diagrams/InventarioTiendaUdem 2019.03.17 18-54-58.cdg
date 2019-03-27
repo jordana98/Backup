@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="InventarioTiendaUdem">
+  <ClassDiagramComponents>
+    <Class name="IndexController" package="udem.edu.co.controller" visibility="public" xPosition="-62.0" yPosition="-82.0">
+      <Fields>
+        <Field name="current" type="Usuarios" visibility="private"/>
+        <Field name="ejbFacade" type="udem.edu.co.facade.UsuariosFacade" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="init" returnType="void" visibility="public"/>
+        <Method name="iniciarSesion" returnType="String" visibility="public"/>
+        <Method name="getCurrent" returnType="Usuarios" visibility="public"/>
+        <Method name="setCurrent" returnType="void" visibility="public">
+          <Argument type="Usuarios" name="current"/>
+        </Method>
+        <Method name="getEjbFacade" returnType="UsuariosFacade" visibility="public"/>
+        <Method name="setEjbFacade" returnType="void" visibility="public">
+          <Argument type="UsuariosFacade" name="ejbFacade"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InsumosController" package="udem.edu.co.controller" visibility="public" xPosition="259.0" yPosition="-291.0">
+      <Fields>
+        <Field name="current" type="Insumos" visibility="private"/>
+        <Field name="items" type="DataModel" visibility="private"/>
+        <Field name="ejbFacade" type="udem.edu.co.facade.InsumosFacade" visibility="private"/>
+        <Field name="pagination" type="PaginationHelper" visibility="private"/>
+        <Field name="selectedItemIndex" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSelected" returnType="Insumos" visibility="public"/>
+        <Method name="getFacade" returnType="InsumosFacade" visibility="private"/>
+        <Method name="getPagination" returnType="PaginationHelper" visibility="public"/>
+        <Method name="prepareList" returnType="String" visibility="public"/>
+        <Method name="prepareView" returnType="String" visibility="public"/>
+        <Method name="prepareCreate" returnType="String" visibility="public"/>
+        <Method name="create" returnType="String" visibility="public"/>
+        <Method name="prepareEdit" returnType="String" visibility="public"/>
+        <Method name="update" returnType="String" visibility="public"/>
+        <Method name="destroy" returnType="String" visibility="public"/>
+        <Method name="destroyAndView" returnType="String" visibility="public"/>
+        <Method name="performDestroy" returnType="void" visibility="private"/>
+        <Method name="updateCurrentItem" returnType="void" visibility="private"/>
+        <Method name="getItems" returnType="DataModel" visibility="public"/>
+        <Method name="recreateModel" returnType="void" visibility="private"/>
+        <Method name="recreatePagination" returnType="void" visibility="private"/>
+        <Method name="next" returnType="String" visibility="public"/>
+        <Method name="previous" returnType="String" visibility="public"/>
+        <Method name="getItemsAvailableSelectMany" returnType="SelectItem[]" visibility="public"/>
+        <Method name="getItemsAvailableSelectOne" returnType="SelectItem[]" visibility="public"/>
+        <Method name="getInsumos" returnType="Insumos" visibility="public">
+          <Argument type="java.lang.Integer" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MenuView" package="udem.edu.co.controller" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="model" type="MenuModel" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="init" returnType="void" visibility="public"/>
+        <Method name="getModel" returnType="MenuModel" visibility="public"/>
+        <Method name="save" returnType="void" visibility="public"/>
+        <Method name="update" returnType="void" visibility="public"/>
+        <Method name="delete" returnType="void" visibility="public"/>
+        <Method name="addMessage" returnType="void" visibility="public">
+          <Argument type="String" name="summary"/>
+          <Argument type="String" name="detail"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PlantillaController" package="udem.edu.co.controller" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="verificarSesion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ProductoController" package="udem.edu.co.controller" visibility="public" xPosition="1106.0" yPosition="-243.0">
+      <Fields>
+        <Field name="current" type="Producto" visibility="private"/>
+        <Field name="items" type="DataModel" visibility="private"/>
+        <Field name="ejbFacade" type="udem.edu.co.facade.ProductoFacade" visibility="private"/>
+        <Field name="pagination" type="PaginationHelper" visibility="private"/>
+        <Field name="selectedItemIndex" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSelected" returnType="Producto" visibility="public"/>
+        <Method name="getFacade" returnType="ProductoFacade" visibility="private"/>
+        <Method name="getPagination" returnType="PaginationHelper" visibility="public"/>
+        <Method name="prepareList" returnType="String" visibility="public"/>
+        <Method name="prepareView" returnType="String" visibility="public"/>
+        <Method name="prepareCreate" returnType="String" visibility="public"/>
+        <Method name="create" returnType="String" visibility="public"/>
+        <Method name="prepareEdit" returnType="String" visibility="public"/>
+        <Method name="update" returnType="String" visibility="public"/>
+        <Method name="destroy" returnType="String" visibility="public"/>
+        <Method name="destroyAndView" returnType="String" visibility="public"/>
+        <Method name="performDestroy" returnType="void" visibility="private"/>
+        <Method name="updateCurrentItem" returnType="void" visibility="private"/>
+        <Method name="getItems" returnType="DataModel" visibility="public"/>
+        <Method name="recreateModel" returnType="void" visibility="private"/>
+        <Method name="recreatePagination" returnType="void" visibility="private"/>
+        <Method name="next" returnType="String" visibility="public"/>
+        <Method name="previous" returnType="String" visibility="public"/>
+        <Method name="getItemsAvailableSelectMany" returnType="SelectItem[]" visibility="public"/>
+        <Method name="getItemsAvailableSelectOne" returnType="SelectItem[]" visibility="public"/>
+        <Method name="getProducto" returnType="Producto" visibility="public">
+          <Argument type="java.lang.Integer" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UserController" package="udem.edu.co.controller" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="ps" type="PreparedStatement" visibility="package"/>
+        <Field name="rs" type="ResultSet" visibility="package"/>
+        <Field name="resp" type="int" visibility="package"/>
+        <Field name="cx" type="Connection" visibility="package"/>
+        <Field name="bd" type="String" visibility="package"/>
+        <Field name="url" type="String" visibility="package"/>
+        <Field name="user" type="String" visibility="package"/>
+        <Field name="pass" type="String" visibility="package"/>
+        <Field name="file" type="Part" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="uploadFile" returnType="void" visibility="public"/>
+        <Method name="getFile" returnType="Part" visibility="public"/>
+        <Method name="setFile" returnType="void" visibility="public">
+          <Argument type="Part" name="file"/>
+        </Method>
+        <Method name="conectar" returnType="Connection" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsuariosController" package="udem.edu.co.controller" visibility="public" xPosition="1767.0" yPosition="-278.0">
+      <Fields>
+        <Field name="current" type="Usuarios" visibility="private"/>
+        <Field name="items" type="DataModel" visibility="private"/>
+        <Field name="ejbFacade" type="udem.edu.co.facade.UsuariosFacade" visibility="private"/>
+        <Field name="pagination" type="PaginationHelper" visibility="private"/>
+        <Field name="selectedItemIndex" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSelected" returnType="Usuarios" visibility="public"/>
+        <Method name="getFacade" returnType="UsuariosFacade" visibility="private"/>
+        <Method name="getPagination" returnType="PaginationHelper" visibility="public"/>
+        <Method name="prepareList" returnType="String" visibility="public"/>
+        <Method name="prepareView" returnType="String" visibility="public"/>
+        <Method name="prepareCreate" returnType="String" visibility="public"/>
+        <Method name="create" returnType="String" visibility="public"/>
+        <Method name="prepareEdit" returnType="String" visibility="public"/>
+        <Method name="update" returnType="String" visibility="public"/>
+        <Method name="destroy" returnType="String" visibility="public"/>
+        <Method name="destroyAndView" returnType="String" visibility="public"/>
+        <Method name="performDestroy" returnType="void" visibility="private"/>
+        <Method name="updateCurrentItem" returnType="void" visibility="private"/>
+        <Method name="getItems" returnType="DataModel" visibility="public"/>
+        <Method name="recreateModel" returnType="void" visibility="private"/>
+        <Method name="recreatePagination" returnType="void" visibility="private"/>
+        <Method name="next" returnType="String" visibility="public"/>
+        <Method name="previous" returnType="String" visibility="public"/>
+        <Method name="getItemsAvailableSelectMany" returnType="SelectItem[]" visibility="public"/>
+        <Method name="getItemsAvailableSelectOne" returnType="SelectItem[]" visibility="public"/>
+        <Method name="getUsuarios" returnType="Usuarios" visibility="public">
+          <Argument type="java.lang.Integer" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="JsfUtil" package="udem.edu.co.controller.util" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getSelectItems" returnType="SelectItem[]" visibility="public" isStatic="true">
+          <Argument type="List&lt;?&gt;" name="entities"/>
+          <Argument type="boolean" name="selectOne"/>
+        </Method>
+        <Method name="addErrorMessage" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Exception" name="ex"/>
+          <Argument type="String" name="defaultMsg"/>
+        </Method>
+        <Method name="addErrorMessages" returnType="void" visibility="public" isStatic="true">
+          <Argument type="List&lt;String&gt;" name="messages"/>
+        </Method>
+        <Method name="addErrorMessage" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="msg"/>
+        </Method>
+        <Method name="addSuccessMessage" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="msg"/>
+        </Method>
+        <Method name="getRequestParameter" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="getObjectFromRequestParameter" returnType="Object" visibility="public" isStatic="true">
+          <Argument type="String" name="requestParameterName"/>
+          <Argument type="Converter" name="converter"/>
+          <Argument type="UIComponent" name="component"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PaginationHelper" package="udem.edu.co.controller.util" visibility="public" isAbstract="true" xPosition="20.0" yPosition="251.0">
+      <Fields>
+        <Field name="pageSize" type="int" visibility="private"/>
+        <Field name="page" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="pageSize"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getItemsCount" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="createPageDataModel" returnType="DataModel" visibility="public" isAbstract="true"/>
+        <Method name="getPageFirstItem" returnType="int" visibility="public"/>
+        <Method name="getPageLastItem" returnType="int" visibility="public"/>
+        <Method name="isHasNextPage" returnType="boolean" visibility="public"/>
+        <Method name="nextPage" returnType="void" visibility="public"/>
+        <Method name="isHasPreviousPage" returnType="boolean" visibility="public"/>
+        <Method name="previousPage" returnType="void" visibility="public"/>
+        <Method name="getPageSize" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Insumos" package="udem.edu.co.entity" visibility="public" xPosition="-28.0" yPosition="284.0">
+      <Fields>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="cantidad" type="int" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="cantidad"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="tipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getCantidad" returnType="int" visibility="public"/>
+        <Method name="setCantidad" returnType="void" visibility="public">
+          <Argument type="int" name="cantidad"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="udem.edu.co.entity" visibility="public" xPosition="392.0" yPosition="340.0">
+      <Fields>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="cantidad" type="int" visibility="private"/>
+        <Field name="precioCompra" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="descripcion"/>
+          <Argument type="int" name="cantidad"/>
+          <Argument type="int" name="precioCompra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getCantidad" returnType="int" visibility="public"/>
+        <Method name="setCantidad" returnType="void" visibility="public">
+          <Argument type="int" name="cantidad"/>
+        </Method>
+        <Method name="getPrecioCompra" returnType="int" visibility="public"/>
+        <Method name="setPrecioCompra" returnType="void" visibility="public">
+          <Argument type="int" name="precioCompra"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Usuarios" package="udem.edu.co.entity" visibility="public" xPosition="656.0" yPosition="198.0">
+      <Fields>
+        <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="username" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="password"/>
+          <Argument type="String" name="username"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AbstractFacade" package="udem.edu.co.facade" visibility="public" isAbstract="true" xPosition="1178.0" yPosition="572.0">
+      <Fields>
+        <Field name="entityClass" type="Class&lt;T&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Class&lt;T&gt;" name="entityClass"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEntityManager" returnType="EntityManager" visibility="protected" isAbstract="true"/>
+        <Method name="create" returnType="void" visibility="public">
+          <Argument type="T" name="entity"/>
+        </Method>
+        <Method name="edit" returnType="void" visibility="public">
+          <Argument type="T" name="entity"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="T" name="entity"/>
+        </Method>
+        <Method name="find" returnType="T" visibility="public">
+          <Argument type="Object" name="id"/>
+        </Method>
+        <Method name="findAll" returnType="List&lt;T&gt;" visibility="public"/>
+        <Method name="findRange" returnType="List&lt;T&gt;" visibility="public">
+          <Argument type="int[]" name="range"/>
+        </Method>
+        <Method name="count" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="InsumosFacade" package="udem.edu.co.facade" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="em" type="EntityManager" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEntityManager" returnType="EntityManager" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="ProductoFacade" package="udem.edu.co.facade" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="em" type="EntityManager" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEntityManager" returnType="EntityManager" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="UsuariosFacade" package="udem.edu.co.facade" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="em" type="EntityManager" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEntityManager" returnType="EntityManager" visibility="protected"/>
+        <Method name="iniciarSesion" returnType="Usuarios" visibility="public">
+          <Argument type="Usuarios" name="current"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.entity.Insumos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.ProductoController" target="udem.edu.co.entity.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.IndexController" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.facade.UsuariosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pagination" source="udem.edu.co.controller.ProductoController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.entity.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pagination" source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.facade.UsuariosFacade" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.IndexController" target="udem.edu.co.entity.Usuarios" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.InsumosController" target="udem.edu.co.entity.Insumos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="udem.edu.co.facade.InsumosFacade" target="udem.edu.co.facade.AbstractFacade"/>
+    <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.IndexController" target="udem.edu.co.facade.UsuariosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="udem.edu.co.facade.UsuariosFacade" target="udem.edu.co.facade.AbstractFacade"/>
+    <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.entity.Usuarios" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.facade.ProductoFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.facade.InsumosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="udem.edu.co.facade.ProductoFacade" target="udem.edu.co.facade.AbstractFacade"/>
+    <HasRelation name="pagination" source="udem.edu.co.controller.InsumosController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
