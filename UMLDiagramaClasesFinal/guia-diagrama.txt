@@ -1,0 +1,4 @@
+Para ver el diagrama de clases
+primero se debe abrir el archivo Class Diagrams
+despues se debe agregar en netbeans en tools--> plugins-->easyUML 
+abrimos el proyecto desde netbenas y le mostrara el diagrama de clases.
