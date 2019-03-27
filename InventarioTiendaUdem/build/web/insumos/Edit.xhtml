@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <!--redirecciona los usuarios no loggeados-->
+    <f:event type = "preRenderView" listener="#{plantillaController.verificarSesion()}" />
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditInsumosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditInsumosLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{insumosController.selected.id}" title="#{bundle.EditInsumosTitle_id}" required="true" requiredMessage="#{bundle.EditInsumosRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.EditInsumosLabel_nombre}" for="nombre" />
+                    <h:inputText id="nombre" value="#{insumosController.selected.nombre}" title="#{bundle.EditInsumosTitle_nombre}" required="true" requiredMessage="#{bundle.EditInsumosRequiredMessage_nombre}"/>
+                    <h:outputLabel value="#{bundle.EditInsumosLabel_cantidad}" for="cantidad" />
+                    <h:inputText id="cantidad" value="#{insumosController.selected.cantidad}" title="#{bundle.EditInsumosTitle_cantidad}" required="true" requiredMessage="#{bundle.EditInsumosRequiredMessage_cantidad}"/>
+                    <h:outputLabel value="#{bundle.EditInsumosLabel_precio}" for="precio" />
+                    <h:inputText id="precio" value="#{insumosController.selected.precio}" title="#{bundle.EditInsumosTitle_precio}" required="true" requiredMessage="#{bundle.EditInsumosRequiredMessage_precio}"/>
+                    <h:outputLabel value="#{bundle.EditInsumosLabel_tipo}" for="tipo" />
+                    <h:inputText id="tipo" value="#{insumosController.selected.tipo}" title="#{bundle.EditInsumosTitle_tipo}" required="true" requiredMessage="#{bundle.EditInsumosRequiredMessage_tipo}"/>
+                </h:panelGrid>
+                <h:commandLink action="#{insumosController.update}" value="#{bundle.EditInsumosSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditInsumosViewLink}"/>
+                <br />
+                <h:commandLink action="#{insumosController.prepareList}" value="#{bundle.EditInsumosShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditInsumosIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

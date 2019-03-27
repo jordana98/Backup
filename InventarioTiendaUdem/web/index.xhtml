@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" >
+    
+    <h:head>
+        <title>Login</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <body background="image1.png"></body>
+
+    <h:body>
+       <h:form>
+            <center>
+                <p:fieldset legend="Iniciar Sesión">
+                    <p:panelGrid columns="2">
+                        
+                        <img src="resources/imagen/round-account-button-with-user-inside_icon-icons.com_72596.png" width="40" alt=""/>
+                        <p:inputText id="txtUsuario" value="#{indexController.current.username}" required="true"/>
+                        <img src="resources/imagen/icons8-lock-30.png" width="40" alt=""/>
+                        <p:password  id="txtPass" value="#{indexController.current.password}" required="true"/>
+                    </p:panelGrid>
+                    <p:commandButton value="Log in" action="#{indexController.iniciarSesion()}"/>
+                    
+                </p:fieldset>
+
+            </center>
+
+
+        
+
+        </h:form>
+    </h:body>
+
+
+</html>
+

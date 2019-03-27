@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <body background="image1.png">
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Producto</title>
+            </f:facet>
+            <!--redirecciona los usuarios no loggeados-->
+            <f:event type = "preRenderView" listener="#{plantillaController.verificarSesion()}" />
+        </h:head>
+            <h:body>
+
+                <h:form enctype="multipart/form-data">
+                    <p:menu>
+                    <p:submenu label="Acciones">
+                        <p:menuitem value="Crear" action="#{menuView.save}" update="messages" url="producto/Create.xhtml" icon="pi pi-save" />
+                        <p:menuitem value="Mostrar Lista" action="#{menuView.delete}" update="messages" url="producto/List.xhtml" icon="pi pi-times"/>
+                        <p:menuitem value="Regresar" action="#{menuView.update()}" url="protegido/FaceLetPrincipal.xhtml" icon="pi pi-home"/>
+                    </p:submenu>
+                    </p:menu>
+                    <!--Aqui tenemos la parte del fileUpLoad-->
+
+                    <p style="color:#EBE4E2" >CARGAR ARCHIVO CSV</p>
+                    <h:inputFile value="#{userController.file}"/><br/>
+                    <h:commandButton value="Upload File" action="#{userController.uploadFile()}"/>
+                </h:form>
+            </h:body>
+        
+        </f:view>
+    </body>
+</html>
+
