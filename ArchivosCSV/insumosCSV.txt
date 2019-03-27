@@ -1,0 +1,2 @@
+computadores,azus,5,800.000
+telefono,cisco,3,75.000

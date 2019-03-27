@@ -1,0 +1,2 @@
+antenas,modelo_yagi,5,100.000
+transmisores,fm-rvr,3,75.000
