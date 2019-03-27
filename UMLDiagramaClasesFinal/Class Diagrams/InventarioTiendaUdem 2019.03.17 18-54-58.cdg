@@ -2,7 +2,7 @@
 
 <ClassDiagram name="InventarioTiendaUdem">
   <ClassDiagramComponents>
-    <Class name="IndexController" package="udem.edu.co.controller" visibility="public" xPosition="-62.0" yPosition="-82.0">
+    <Class name="IndexController" package="udem.edu.co.controller" visibility="public" xPosition="461.0" yPosition="278.0">
       <Fields>
         <Field name="current" type="Usuarios" visibility="private"/>
         <Field name="ejbFacade" type="udem.edu.co.facade.UsuariosFacade" visibility="private"/>
@@ -23,7 +23,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="InsumosController" package="udem.edu.co.controller" visibility="public" xPosition="259.0" yPosition="-291.0">
+    <Class name="InsumosController" package="udem.edu.co.controller" visibility="public" xPosition="-167.0" yPosition="-23.0">
       <Fields>
         <Field name="current" type="Insumos" visibility="private"/>
         <Field name="items" type="DataModel" visibility="private"/>
@@ -60,7 +60,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="MenuView" package="udem.edu.co.controller" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="MenuView" package="udem.edu.co.controller" visibility="public" xPosition="782.0" yPosition="-37.0">
       <Fields>
         <Field name="model" type="MenuModel" visibility="private"/>
       </Fields>
@@ -77,14 +77,14 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="PlantillaController" package="udem.edu.co.controller" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="PlantillaController" package="udem.edu.co.controller" visibility="public" xPosition="874.0" yPosition="145.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="verificarSesion" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="ProductoController" package="udem.edu.co.controller" visibility="public" xPosition="1106.0" yPosition="-243.0">
+    <Class name="ProductoController" package="udem.edu.co.controller" visibility="public" xPosition="340.0" yPosition="199.0">
       <Fields>
         <Field name="current" type="Producto" visibility="private"/>
         <Field name="items" type="DataModel" visibility="private"/>
@@ -121,7 +121,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="UserController" package="udem.edu.co.controller" visibility="public" xPosition="1520.0" yPosition="20.0">
+    <Class name="UserController" package="udem.edu.co.controller" visibility="public" xPosition="886.0" yPosition="391.0">
       <Fields>
         <Field name="ps" type="PreparedStatement" visibility="package"/>
         <Field name="rs" type="ResultSet" visibility="package"/>
@@ -143,7 +143,7 @@
         <Method name="conectar" returnType="Connection" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="UsuariosController" package="udem.edu.co.controller" visibility="public" xPosition="1767.0" yPosition="-278.0">
+    <Class name="UsuariosController" package="udem.edu.co.controller" visibility="public" xPosition="597.0" yPosition="16.0">
       <Fields>
         <Field name="current" type="Usuarios" visibility="private"/>
         <Field name="items" type="DataModel" visibility="private"/>
@@ -180,7 +180,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="JsfUtil" package="udem.edu.co.controller.util" visibility="public" xPosition="2120.0" yPosition="20.0">
+    <Class name="JsfUtil" package="udem.edu.co.controller.util" visibility="public" xPosition="2190.0" yPosition="-233.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -211,7 +211,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="PaginationHelper" package="udem.edu.co.controller.util" visibility="public" isAbstract="true" xPosition="20.0" yPosition="251.0">
+    <Class name="PaginationHelper" package="udem.edu.co.controller.util" visibility="public" isAbstract="true" xPosition="60.0" yPosition="218.0">
       <Fields>
         <Field name="pageSize" type="int" visibility="private"/>
         <Field name="page" type="int" visibility="private"/>
@@ -233,7 +233,7 @@
         <Method name="getPageSize" returnType="int" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Insumos" package="udem.edu.co.entity" visibility="public" xPosition="-28.0" yPosition="284.0">
+    <Class name="Insumos" package="udem.edu.co.entity" visibility="public" xPosition="15.0" yPosition="-4.0">
       <Fields>
         <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="id" type="Integer" visibility="private"/>
@@ -283,7 +283,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Producto" package="udem.edu.co.entity" visibility="public" xPosition="392.0" yPosition="340.0">
+    <Class name="Producto" package="udem.edu.co.entity" visibility="public" xPosition="-33.0" yPosition="80.0">
       <Fields>
         <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="id" type="Integer" visibility="private"/>
@@ -333,7 +333,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Usuarios" package="udem.edu.co.entity" visibility="public" xPosition="656.0" yPosition="198.0">
+    <Class name="Usuarios" package="udem.edu.co.entity" visibility="public" xPosition="84.0" yPosition="-135.0">
       <Fields>
         <Field name="serialVersionUID" type="long" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="id" type="Integer" visibility="private"/>
@@ -377,7 +377,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="AbstractFacade" package="udem.edu.co.facade" visibility="public" isAbstract="true" xPosition="1178.0" yPosition="572.0">
+    <Class name="AbstractFacade" package="udem.edu.co.facade" visibility="public" isAbstract="true" xPosition="1102.0" yPosition="262.0">
       <Fields>
         <Field name="entityClass" type="Class&lt;T&gt;" visibility="private"/>
       </Fields>
@@ -407,7 +407,7 @@
         <Method name="count" returnType="int" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="InsumosFacade" package="udem.edu.co.facade" visibility="public" xPosition="1520.0" yPosition="420.0">
+    <Class name="InsumosFacade" package="udem.edu.co.facade" visibility="public" xPosition="453.0" yPosition="210.0">
       <Fields>
         <Field name="em" type="EntityManager" visibility="private"/>
       </Fields>
@@ -418,7 +418,7 @@
         <Method name="getEntityManager" returnType="EntityManager" visibility="protected"/>
       </Methods>
     </Class>
-    <Class name="ProductoFacade" package="udem.edu.co.facade" visibility="public" xPosition="1820.0" yPosition="420.0">
+    <Class name="ProductoFacade" package="udem.edu.co.facade" visibility="public" xPosition="782.0" yPosition="274.0">
       <Fields>
         <Field name="em" type="EntityManager" visibility="private"/>
       </Fields>
@@ -429,7 +429,7 @@
         <Method name="getEntityManager" returnType="EntityManager" visibility="protected"/>
       </Methods>
     </Class>
-    <Class name="UsuariosFacade" package="udem.edu.co.facade" visibility="public" xPosition="2120.0" yPosition="420.0">
+    <Class name="UsuariosFacade" package="udem.edu.co.facade" visibility="public" xPosition="664.0" yPosition="145.0">
       <Fields>
         <Field name="em" type="EntityManager" visibility="private"/>
       </Fields>
@@ -445,27 +445,27 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.entity.Insumos" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="current" source="udem.edu.co.controller.ProductoController" target="udem.edu.co.entity.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.controller.IndexController" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.facade.UsuariosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="pagination" source="udem.edu.co.controller.ProductoController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.entity.Producto" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="pagination" source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.facade.UsuariosFacade" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="current" source="udem.edu.co.controller.IndexController" target="udem.edu.co.entity.Usuarios" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="current" source="udem.edu.co.controller.InsumosController" target="udem.edu.co.entity.Insumos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.facade.UsuariosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="udem.edu.co.facade.InsumosFacade" target="udem.edu.co.facade.AbstractFacade"/>
-    <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.controller.IndexController" target="udem.edu.co.facade.UsuariosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.ProductoController" target="udem.edu.co.entity.Producto" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.entity.Usuarios" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pagination" source="udem.edu.co.controller.InsumosController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.facade.InsumosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="udem.edu.co.facade.UsuariosFacade" target="udem.edu.co.facade.AbstractFacade"/>
     <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="current" source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.entity.Usuarios" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.facade.ProductoFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.facade.InsumosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pagination" source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.entity.Insumos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.IndexController" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.facade.UsuariosFacade" target="udem.edu.co.entity.Usuarios" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.UsuariosController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="udem.edu.co.facade.ProductoFacade" target="udem.edu.co.facade.AbstractFacade"/>
-    <HasRelation name="pagination" source="udem.edu.co.controller.InsumosController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="udem.edu.co.controller.InsumosController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.IndexController" target="udem.edu.co.entity.Usuarios" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pagination" source="udem.edu.co.controller.ProductoController" target="udem.edu.co.controller.util.PaginationHelper" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.IndexController" target="udem.edu.co.facade.UsuariosFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.facade.ProductoFacade" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current" source="udem.edu.co.controller.InsumosController" target="udem.edu.co.entity.Insumos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="udem.edu.co.controller.ProductoController" target="udem.edu.co.controller.util.PaginationHelper" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
